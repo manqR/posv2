@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.co.indomobil.indostationpos.SalesInputItemFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Sales Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSalesDate_SalesInputItem"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:text="Cashier01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/txtKasir_SalesInputItem"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="0.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/txtTotalAmmount_SalesInputItem"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="No Penjualan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/txtSalesNo_SalesInputItem"
+                android:visibility="gone"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/ddlItemCategory_SalesInputItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_marginBottom="2dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:dropDownVerticalOffset="35dp"
+            android:spinnerMode="dropdown"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorBlack" />
+
+        <SearchView
+            android:id="@+id/sv_category_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search_view"
+            android:iconifiedByDefault="false"
+            android:focusable="false"
+            android:queryHint="Masukkan kode atau deskripsi" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ListItem_SalesInputItem"
+                android:headerDividersEnabled="true">
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
